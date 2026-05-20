@@ -1,0 +1,33 @@
+name: battery_monitor
+description: >
+  ESP32 Battery Monitor & Inverter Controller.
+  Dual connectivity: BLE (provisioning + fallback) + MQTT (cloud).
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # BLE communication (scanning, connect, read/write/notify)
+  flutter_blue_plus: ^1.35.2
+
+  # MQTT client for cloud connectivity
+  mqtt5_client: ^4.5.0
+
+  # Runtime permission handling (Bluetooth, Location)
+  permission_handler: ^11.3.1
+
+  # State management — lightweight, reactive
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

@@ -1,0 +1,20 @@
+<!--
+  ============================================================
+  ADD these keys to your ios/Runner/Info.plist
+  inside the top-level <dict>.
+  ============================================================
+-->
+
+<key>NSBluetoothAlwaysUsageDescription</key>
+<string>This app uses Bluetooth to connect to your battery monitor device and provision Wi-Fi.</string>
+
+<key>NSBluetoothPeripheralUsageDescription</key>
+<string>This app uses Bluetooth to connect to your battery monitor device.</string>
+
+<key>NSLocalNetworkUsageDescription</key>
+<string>This app connects to a cloud server to receive battery data remotely.</string>
+
+<!--
+  Also set minimum deployment target in Podfile:
+  platform :ios, '13.0'
+-->
